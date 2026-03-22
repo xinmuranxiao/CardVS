@@ -25,6 +25,9 @@
     <Filter Include="头文件\hero">
       <UniqueIdentifier>{8f5a6c1f-a0bc-49ee-ba8c-94a215b96621}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\system">
+      <UniqueIdentifier>{f8334fb6-9d55-44b5-9d4e-22e5ea925143}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -40,6 +43,15 @@
     </ClInclude>
     <ClInclude Include="player.h">
       <Filter>头文件\player</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="windows.h">
+      <Filter>头文件\system</Filter>
+    </ClInclude>
+    <ClInclude Include="linux.h">
+      <Filter>头文件\system</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

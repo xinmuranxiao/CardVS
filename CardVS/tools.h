@@ -1,5 +1,7 @@
-#include<iostream>
-#include<string>
+#ifndef TOOLS_H
+#define TOOLS_H
+
+#include "common.h"
 
 namespace tools {
 	class Storage {
@@ -21,3 +23,5 @@ namespace tools {
 		int load()override;
 	};
 }
+
+#endif //TOOLS_H
