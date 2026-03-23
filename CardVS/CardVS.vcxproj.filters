@@ -31,6 +31,9 @@
     <Filter Include="头文件\SystemPlatform">
       <UniqueIdentifier>{f8334fb6-9d55-44b5-9d4e-22e5ea925143}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Crad">
+      <UniqueIdentifier>{99c76e66-db3d-4467-977e-15c12118b5c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

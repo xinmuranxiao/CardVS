@@ -7,7 +7,10 @@ namespace tools {
 	class Storage {
 	public:
 		Storage(const std::string address_) :address(address_) {};//获取地址
-		virtual int load() = 0;//读取
+		
+		virtual int _load() = 0;//读取
+		virtual std::vector<int> ___load() = 0;
+
 		virtual int save() = 0;//保存
 		virtual int init() = 0;//初始化
 	protected:

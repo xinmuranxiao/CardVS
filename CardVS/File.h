@@ -7,8 +7,11 @@ namespace tools {
 	class File :public Storage {//file ผฬณะ stronge 
 	public:
 		int init()override;
+
+		int _load()override;
+		std::vector<int> ___load() override;
+
 		int save()override;
-		int load()override;
 	};
 }
 

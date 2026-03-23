@@ -2,7 +2,6 @@
 
 namespace player{
 	player::player() {
-		std::ifstream in("");
-		in.
+		uid;
 	}
 }

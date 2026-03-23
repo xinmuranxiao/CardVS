@@ -8,6 +8,7 @@ namespace player {
 	public:
 		player();
 	protected:
+		int uid;
 		int coin;
 		std::string name;
 	};
