@@ -13,19 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\tools">
-      <UniqueIdentifier>{1e57ff11-ca43-4b21-a416-78ccbae5b78c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\tools">
       <UniqueIdentifier>{eaca62b7-aa5d-4b7b-98bb-2fcaa171c562}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\player">
-      <UniqueIdentifier>{2c10c1a7-d56d-4e19-8f35-1b2e6ea215db}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\hero">
       <UniqueIdentifier>{8f5a6c1f-a0bc-49ee-ba8c-94a215b96621}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\system">
+    <Filter Include="源文件\Player">
+      <UniqueIdentifier>{1b41d4bd-df46-4f4c-912b-b805b07e1df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Player">
+      <UniqueIdentifier>{2c10c1a7-d56d-4e19-8f35-1b2e6ea215db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Tools">
+      <UniqueIdentifier>{1e57ff11-ca43-4b21-a416-78ccbae5b78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\SystemPlatform">
       <UniqueIdentifier>{f8334fb6-9d55-44b5-9d4e-22e5ea925143}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -33,25 +36,43 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="storage.cpp">
-      <Filter>源文件\tools</Filter>
+    <ClCompile Include="Storage.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>源文件\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tools.h">
+    <ClInclude Include="Tools.h">
       <Filter>头文件\tools</Filter>
     </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>头文件\player</Filter>
+    <ClInclude Include="Player.h">
+      <Filter>头文件\Player</Filter>
     </ClInclude>
-    <ClInclude Include="common.h">
+    <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="windows.h">
-      <Filter>头文件\system</Filter>
+    <ClInclude Include="WindowsPlatform.h">
+      <Filter>头文件\SystemPlatform</Filter>
     </ClInclude>
-    <ClInclude Include="linux.h">
-      <Filter>头文件\system</Filter>
+    <ClInclude Include="LinuxPlatform.h">
+      <Filter>头文件\SystemPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>头文件\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL.h">
+      <Filter>头文件\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>头文件\SystemPlatform</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
