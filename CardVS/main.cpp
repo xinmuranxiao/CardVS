@@ -1,6 +1,15 @@
-#include<iostream>
+#include "FrameWork.h"
+
 using namespace std;
 int main() {
-	cout << "1" << endl;
+	framework::R_Platform = 
+		new platform::WinPF();
+
+	tools::Out R_Out;
+
+	R_Out.setOutPut(framework::outPut_PlatForm);
+
+	R_Out.out("³É¹¦£¡");
+
 	return 0;
 }

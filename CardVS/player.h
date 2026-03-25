@@ -4,11 +4,11 @@
 #include"common.h"
 
 namespace player {
-	class player {
+	class Player {
 	public:
+		Player();
 	protected:
-		int coin;
-		std::string name;
+		PlayerType player;
 	};
 }
 

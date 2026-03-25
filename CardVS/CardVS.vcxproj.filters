@@ -34,6 +34,9 @@
     <Filter Include="头文件\Crad">
       <UniqueIdentifier>{99c76e66-db3d-4467-977e-15c12118b5c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\SystemPlatform">
+      <UniqueIdentifier>{8c152a30-72c3-40cc-889a-5698f1d0623b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,11 +48,23 @@
     <ClCompile Include="Player.cpp">
       <Filter>源文件\Player</Filter>
     </ClCompile>
+    <ClCompile Include="FrameWork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowPlarform.cpp">
+      <Filter>源文件\SystemPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="out.h">
+      <Filter>头文件\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="out.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Tools.h">
-      <Filter>头文件\tools</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>头文件\Player</Filter>
     </ClInclude>
@@ -79,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Platform.h">
       <Filter>头文件\SystemPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>头文件\tools</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

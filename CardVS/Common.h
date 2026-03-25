@@ -6,8 +6,8 @@
 #include <fstream>
 #include <vector>
 
-using PlayerType=std::pair<
-	std::pair<int, std::string>,
-	size_t>;
+using PlayerType = std::pair<
+	std::pair<uint64_t, std::string>,
+	long long>;
 
 #endif //COMMON_H

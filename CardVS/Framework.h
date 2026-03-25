@@ -6,9 +6,12 @@
 #include "Platform.h"
 
 namespace framework {
-	extern platform::Platform* g_platform;
+	extern platform::Platform* R_Platform;
 
-	void platformLogBridge(std::string msg);
+	void outPut_PlatForm(std::string msg);
+
+	void set_Storage_setOutPut(
+		tools::Storage* storage);
 }
 
 #endif //FRAMEWORK_H

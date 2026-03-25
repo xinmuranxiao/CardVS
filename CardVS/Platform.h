@@ -3,11 +3,6 @@
 
 #include "PlatformCommon.h"
 
-namespace platform {
-	class Platform {
-	public:
-		virtual void output(std::string) = 0;
-	};
-}
+#include "WindowsPlatform.h"
 
 #endif // ! PLATFORMCOMMON_H

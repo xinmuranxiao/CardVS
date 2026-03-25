@@ -17,5 +17,8 @@ namespace tools {
 	}
 
 	PlayerType File::init_player() {
+		PlayerType newPlayer = { {0,std::string("name")},0 };
+		outPut(std::string("请输入用户名称"));
+		return newPlayer;
 	}
 }

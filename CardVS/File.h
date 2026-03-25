@@ -13,9 +13,7 @@ namespace tools {
 		PlayerType init_player()override;
 
 		PlayerType load_player()override;
-		std::vector<int> _load()override;
 
-		int save()override;
 	private:
 		std::string address;//ÎÄ¼şµØÖ·
 	};
