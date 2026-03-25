@@ -11,17 +11,12 @@ namespace tools {
 		virtual PlayerType init_player() = 0;//初始化
 
 		virtual PlayerType load_player() = 0;//读取
-		virtual std::vector<int> _load() = 0;
 
-		virtual int save() = 0;//保存
+		void setOutPut(OutFunc func);
 
-		void setOutPut(OutFunc func) {
-			output = func;
-		}
-
+		void out(std::string str);
 	protected:
-		OutFunc output = nullptr;
+		OutFunc outPut = nullptr;
 	};
 }
-
 #endif //TOOLS_H

@@ -9,8 +9,6 @@ namespace tools {
 		PlayerType init_player() override;
 
 		PlayerType load_player() override;
-
-		void out(std::string str);
 	};
 }
 

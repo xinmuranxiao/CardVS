@@ -2,6 +2,7 @@
 #define FILE_H
 
 #include "Tools.h"
+#include <filesystem>
 
 namespace tools {
 	class File :public Storage {//file ผฬณะ stronge 

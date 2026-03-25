@@ -5,7 +5,7 @@ namespace tools {
 	PlayerType File::load_player() {
 		std::ifstream file(address);
 		if (!file.is_open()) {
-			std::cout << "file error" << std::endl;
+			out("file error or file haven't");
 			return { {-1,"error"},0};
 		}
 		PlayerType player;
