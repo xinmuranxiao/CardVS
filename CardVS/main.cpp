@@ -9,7 +9,7 @@ int main() {
 
 	R_Out.setOutPut(framework::outPut_PlatForm);
 
-	R_Out.out("³É¹¦£¡");
+	void work()
 
 	return 0;
 }

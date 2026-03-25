@@ -14,6 +14,7 @@ namespace tools {
 
 		void setOutPut(OutFunc func);
 
+		void out(std::string str);
 	protected:
 		OutFunc outPut = nullptr;
 	};

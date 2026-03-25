@@ -12,6 +12,9 @@ namespace platform {
 	class Platform {
 	public:
 		virtual void outPut(std::string) = 0;
+
+		template<typename T>
+		T inGet();
 	};
 }
 

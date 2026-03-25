@@ -2,8 +2,8 @@
 #define FRAMEWORK_H
 
 #include "Core.h"
-
 #include "Platform.h"
+#include "Work.cpp"
 
 namespace framework {
 	extern platform::Platform* R_Platform;

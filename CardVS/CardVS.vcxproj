@@ -133,6 +133,7 @@
     <ClCompile Include="File.cpp" />
     <ClCompile Include="Tools.cpp" />
     <ClCompile Include="WindowPlarform.cpp" />
+    <ClCompile Include="Work.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />

@@ -12,8 +12,8 @@ namespace tools {
 		file >> player.first.first 
 			>> player.first.second 
 			>> player.second;
-		return player;
 		file.close();
+		return player;
 	}
 
 	PlayerType File::init_player() {
