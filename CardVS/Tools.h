@@ -3,20 +3,24 @@
 
 #include "common.h"
 
+using OutFunc = void(*)(std::string);
+
 namespace tools {
 	class Storage {
 	public:
-		Storage(const std::string address_) :address(address_) {};//获取地址
-		
-		virtual int _load() = 0;//读取
-		virtual std::vector<int> ___load() = 0;
+		virtual PlayerType init_player() = 0;//初始化
+
+		virtual PlayerType load_player() = 0;//读取
+		virtual std::vector<int> _load() = 0;
 
 		virtual int save() = 0;//保存
-		virtual int init() = 0;//初始化
-	protected:
-		std::string address;//文件地址
 
-		//mysql
+		void setOutPut(OutFunc func) {
+			output = func;
+		}
+
+	protected:
+		OutFunc output = nullptr;
 	};
 }
 

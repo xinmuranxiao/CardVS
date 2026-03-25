@@ -1,8 +1,13 @@
-#ifndef PLATFORM_H
-#define PLATFORM_H
+#ifndef PLATFORMCOMMON_H
+#define PLATFORMCOMMON_H
 
-#include "LinuxPlatform.h"
+#include "PlatformCommon.h"
 
-#include "Windows.h"
+namespace platform {
+	class Platform {
+	public:
+		virtual void output(std::string) = 0;
+	};
+}
 
-#endif // £¡PLATFORM_H
+#endif // ! PLATFORMCOMMON_H

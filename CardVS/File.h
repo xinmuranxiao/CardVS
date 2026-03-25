@@ -6,12 +6,18 @@
 namespace tools {
 	class File :public Storage {//file 继承 stronge 
 	public:
-		int init()override;
+		File(const std::string address_ = 
+			std::string("player.txt"))
+			:address(address_) {};//获取地址
 
-		int _load()override;
-		std::vector<int> ___load() override;
+		PlayerType init_player()override;
+
+		PlayerType load_player()override;
+		std::vector<int> _load()override;
 
 		int save()override;
+	private:
+		std::string address;//文件地址
 	};
 }
 

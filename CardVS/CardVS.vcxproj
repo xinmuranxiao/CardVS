@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +126,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Storage.cpp" />
+    <ClCompile Include="File.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
@@ -133,9 +134,10 @@
     <ClInclude Include="File.h" />
     <ClInclude Include="LinuxPlatform.h" />
     <ClInclude Include="MySQL.h" />
+    <ClInclude Include="PlatformCommon.h" />
     <ClInclude Include="Platform.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Framework.h" />
+    <ClInclude Include="FrameWork.h" />
     <ClInclude Include="Tools.h" />
     <ClInclude Include="WindowsPlatform.h" />
   </ItemGroup>
