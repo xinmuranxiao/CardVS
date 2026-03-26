@@ -129,7 +129,7 @@
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="out.cpp" />
-    <ClCompile Include="out.h" />
+    <ClCompile Include="Out.h" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="File.cpp" />
     <ClCompile Include="Tools.cpp" />
@@ -146,6 +146,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="FrameWork.h" />
     <ClInclude Include="Tools.h" />
+    <ClInclude Include="ToolsCommon.h" />
     <ClInclude Include="WindowsPlatform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

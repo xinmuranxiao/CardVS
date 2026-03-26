@@ -1,13 +1,12 @@
 #include "player.h"
-#include "File.h"
 
 namespace player{
-	void Player::load() {//读取用户
+	void Player::load(tools::Out& R_Out) {//读取用户
 	re:		tools::File file;//使用file工具类
-		file.out(std::string("请输入文件路径\n") +
-			std::string("默认exe同路径\n") +
-			std::string("若使用自定义路径请输入y(不区分大小写)") +
-			std::string("不使用按任意字符"));
+		R_Out.out(std::string("请输入文件路径"));
+		R_Out.out(std::string("默认exe同路径"));
+		R_Out.out(std::string("若使用自定义路径请输入y(不区分大小写)"));
+		R_Out.out(std::string("不使用按任意字符"));
 		if (judge_yn()) { 
 			std::string address_;
 			std::cin >> address_;

@@ -9,7 +9,7 @@ int main() {
 
 	R_Out.setOutPut(framework::outPut_PlatForm);//绑定Out
 
-	player::Player Player;//创建用户
+ 	player::Player Player;//创建用户
 
 	int judge = work::Player_Judge(R_Out);
 

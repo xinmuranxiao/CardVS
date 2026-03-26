@@ -54,7 +54,7 @@
     <ClCompile Include="WindowPlarform.cpp">
       <Filter>源文件\SystemPlatform</Filter>
     </ClCompile>
-    <ClCompile Include="out.h">
+    <ClCompile Include="Out.h">
       <Filter>头文件\tools</Filter>
     </ClCompile>
     <ClCompile Include="out.cpp">
@@ -97,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="Platform.h">
       <Filter>头文件\SystemPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolsCommon.h">
+      <Filter>头文件\tools</Filter>
     </ClInclude>
     <ClInclude Include="Tools.h">
       <Filter>头文件\tools</Filter>

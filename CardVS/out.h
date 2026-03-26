@@ -1,7 +1,7 @@
 #ifndef OUT_H
 #define OUT_H
 
-#include "Tools.h"
+#include "ToolsCommon.h"
 
 namespace tools {
 	class Out:public Storage{

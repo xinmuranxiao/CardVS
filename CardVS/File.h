@@ -1,7 +1,7 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include "Tools.h"
+#include "ToolsCommon.h"
 
 namespace tools {
 	class File :public Storage {//file ผฬณะ stronge 

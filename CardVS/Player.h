@@ -1,12 +1,15 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include"common.h"
+#include "common.h"
+
+#include "Out.h"
+#include ""
 
 namespace player {
 	class Player {
 	public:
-		void load();
+		void load(tools::Out& R_Out);
 
 		//void init();
 
