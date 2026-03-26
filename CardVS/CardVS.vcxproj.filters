@@ -63,8 +63,8 @@
     <ClCompile Include="Tools.cpp">
       <Filter>源文件\Tools</Filter>
     </ClCompile>
-    <ClCompile Include="Work.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Input.cpp">
+      <Filter>源文件\Tools</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

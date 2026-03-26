@@ -2,7 +2,6 @@
 #define FILE_H
 
 #include "Tools.h"
-#include <filesystem>
 
 namespace tools {
 	class File :public Storage {//file 继承 stronge 
@@ -10,6 +9,8 @@ namespace tools {
 		File(const std::string address_ = 
 			std::string("player.txt"))
 			:address(address_) {};//获取地址
+
+		void change(const std::string address_);//改变address变量
 
 		PlayerType init_player()override;
 

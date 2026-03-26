@@ -8,9 +8,6 @@ namespace platform {
 	public:
 		void outPut(std::string) override;
 
-		template<typename T>
-		T inGet();
-
 	};
 }
 

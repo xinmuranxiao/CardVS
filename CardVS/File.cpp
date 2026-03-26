@@ -3,22 +3,28 @@
 
 namespace tools {
 	PlayerType File::load_player() {
-		std::ifstream file(address);
-		if (!file.is_open()) {
+		std::ifstream file(address);//打开文件
+		if (!file.is_open()) {//判断文件是否有问题
 			out("file error or file haven't");
 			return { {-1,"error"},0};
 		}
-		PlayerType player;
+		PlayerType player;//临时存储变量
 		file >> player.first.first 
 			>> player.first.second 
-			>> player.second;
-		file.close();
-		return player;
+			>> player.second;//读取
+		file.close();//关闭文件
+		return player;//返回用户
 	}
 
-	PlayerType File::init_player() {
+	PlayerType File::init_player() {//初始化
 		PlayerType newPlayer = { {0,std::string("name")},0 };
 		outPut(std::string("请输入用户名称"));
+		std::cin >> newPlayer.first.first;
+		outPut(std::string());
 		return newPlayer;
+	}
+
+	void File::change(const std::string address_) {
+		address = address_;
 	}
 }

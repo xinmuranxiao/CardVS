@@ -6,7 +6,12 @@
 namespace player {
 	class Player {
 	public:
-		Player();
+		void load();
+
+		//void init();
+
+		bool judge_yn();
+
 	protected:
 		PlayerType player;
 	};

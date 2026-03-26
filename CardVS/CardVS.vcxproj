@@ -126,6 +126,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FrameWork.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="out.cpp" />
     <ClCompile Include="out.h" />
@@ -133,7 +134,6 @@
     <ClCompile Include="File.cpp" />
     <ClCompile Include="Tools.cpp" />
     <ClCompile Include="WindowPlarform.cpp" />
-    <ClCompile Include="Work.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />

@@ -3,15 +3,18 @@
 
 #include "Core.h"
 #include "Platform.h"
-#include "Work.cpp"
 
 namespace framework {
 	extern platform::Platform* R_Platform;
 
 	void outPut_PlatForm(std::string msg);
 
-	void set_Storage_setOutPut(
-		tools::Storage* storage);
+	//void set_Storage_setOutPut(
+	//	tools::Storage* storage);
+}
+
+namespace work {
+	int Player_Judge(tools::Out& R_Out);
 }
 
 #endif //FRAMEWORK_H
