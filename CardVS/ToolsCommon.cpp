@@ -1,4 +1,4 @@
-#include "Tools.h"
+#include "ToolsCommon.h"
 
 namespace tools {
 	void Storage::setOutPut(OutFunc func) {

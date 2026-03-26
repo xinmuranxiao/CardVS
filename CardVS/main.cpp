@@ -13,7 +13,7 @@ int main() {
 
 	int judge = work::Player_Judge(R_Out);
 
-	if (judge == 1) Player.load();
+	if (judge == 1) Player.load(R_Out);
 
 	//else if (judge == 2)Player.init();
 

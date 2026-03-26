@@ -132,7 +132,7 @@
     <ClCompile Include="Out.h" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="File.cpp" />
-    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="ToolsCommon.cpp" />
     <ClCompile Include="WindowPlarform.cpp" />
   </ItemGroup>
   <ItemGroup>

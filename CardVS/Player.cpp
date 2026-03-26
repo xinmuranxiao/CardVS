@@ -14,11 +14,11 @@ namespace player{
 		}
 		player = file.load_player();//调用读取
 		if (player.first.first == -1) {
-			file.out(std::string
+			R_Out.out(std::string
 			("未初始化，请初始化或者文件打开失败"));
-			file.out(std::string("1.重试"));
-			file.out(std::string("2.初始化"));
-			file.out(std::string
+			R_Out.out(std::string("1.重试"));
+			R_Out.out(std::string("2.初始化"));
+			R_Out.out(std::string
 			("请输入编号或者按其他任意数字退出"));
 			int judge;
 			std::cin >> judge;
