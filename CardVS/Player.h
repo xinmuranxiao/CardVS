@@ -4,6 +4,7 @@
 #include "common.h"
 
 #include "Out.h"
+#include "Input.h"
 #include "File.h"
 
 namespace player {

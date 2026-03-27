@@ -7,16 +7,7 @@ namespace framework {
 		if (R_Platform != nullptr) R_Platform->outPut(msg);
 	}
 
-	/*void set_Storage_setOutPut(
-		tools::Storage* storage) {
-		if (storage == nullptr) {
-			if (R_Platform != nullptr) {
-				R_Platform->outPut("NULL");
-				return;
-			}
-		}
-		storage->setOutPut(outPut_PlatForm);
-	}*/
+	
 }
 
 

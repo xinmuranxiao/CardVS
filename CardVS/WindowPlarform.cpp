@@ -5,4 +5,9 @@ namespace platform{
 		std::cout << str << std::endl;
 	}
 
+	std::string WinPF::inPut() {
+		std::string in;
+		std::cin >> in;
+		return in;
+	}
 }

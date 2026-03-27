@@ -139,6 +139,7 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="File.h" />
+    <ClInclude Include="Input.h" />
     <ClInclude Include="LinuxPlatform.h" />
     <ClInclude Include="MySQL.h" />
     <ClInclude Include="PlatformCommon.h" />

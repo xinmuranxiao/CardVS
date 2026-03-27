@@ -8,6 +8,7 @@ namespace platform {
 	public:
 		void outPut(std::string) override;
 
+		std::string inPut() override;
 	};
 }
 

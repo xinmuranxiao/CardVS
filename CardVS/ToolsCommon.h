@@ -5,6 +5,8 @@
 
 using OutFunc = void(*)(std::string);
 
+using InputFunc = std::string(*)();
+
 namespace tools {
 	class Storage {
 	public:
@@ -16,6 +18,7 @@ namespace tools {
 
 		void out(std::string str);
 
+		void setIntGet(InputFunc func);
 	protected:
 		OutFunc outPut = nullptr;
 	};

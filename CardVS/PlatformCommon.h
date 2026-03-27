@@ -13,6 +13,7 @@ namespace platform {
 	public:
 		virtual void outPut(std::string) = 0;
 
+		virtual std::string inPut() = 0;
 	};
 }
 
