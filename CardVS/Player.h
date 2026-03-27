@@ -3,9 +3,7 @@
 
 #include "common.h"
 
-#include "Out.h"
-#include "Input.h"
-#include "File.h"
+#include "Tools.h"
 
 namespace player {
 	class Player {

@@ -3,10 +3,6 @@
 
 #include "common.h"
 
-using OutFunc = void(*)(std::string);
-
-using InputFunc = std::string(*)();
-
 namespace tools {
 	class Storage {
 	public:
@@ -18,9 +14,12 @@ namespace tools {
 
 		void out(std::string str);
 
-		void setIntGet(InputFunc func);
+		void setInPut(InputFunc func);
+
+		void input(std::string& str);
 	protected:
 		OutFunc outPut = nullptr;
+		InputFunc inPut = nullptr;
 	};
 }
 #endif //TOOLS_H

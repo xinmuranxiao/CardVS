@@ -4,5 +4,6 @@
 #include "MySQL.h"
 #include "File.h"
 #include "out.h"
+#include "Input.h"
 
 #endif //TOOLS_H

@@ -132,8 +132,9 @@
     <ClCompile Include="Out.h" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="File.cpp" />
+    <ClCompile Include="QTANDShell.h" />
     <ClCompile Include="ToolsCommon.cpp" />
-    <ClCompile Include="WindowPlarform.cpp" />
+    <ClCompile Include="SELL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
@@ -146,6 +147,8 @@
     <ClInclude Include="Platform.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="FrameWork.h" />
+    <ClInclude Include="QT.h" />
+    <ClInclude Include="SHELL.h" />
     <ClInclude Include="Tools.h" />
     <ClInclude Include="ToolsCommon.h" />
     <ClInclude Include="WindowsPlatform.h" />

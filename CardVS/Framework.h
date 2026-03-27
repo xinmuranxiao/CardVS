@@ -2,15 +2,13 @@
 #define FRAMEWORK_H
 
 #include "Core.h"
-#include "Platform.h"
+#include "QTANDSHELL.h"
 
 namespace framework {
 	extern platform::Platform* R_Platform;
 
 	void outPut_PlatForm(std::string msg);
-
-	//void set_Storage_setOutPut(
-	//	tools::Storage* storage);
+	void inPut_PlatForm(std::string& msg);
 }
 
 namespace work {

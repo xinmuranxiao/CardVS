@@ -7,7 +7,9 @@ namespace framework {
 		if (R_Platform != nullptr) R_Platform->outPut(msg);
 	}
 
-	
+	void inPut_PlatForm(std::string& msg) {
+		if (R_Platform != nullptr) R_Platform->inPut(msg);
+	}
 }
 
 

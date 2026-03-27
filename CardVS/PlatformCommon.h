@@ -11,9 +11,9 @@
 namespace platform {
 	class Platform {
 	public:
-		virtual void outPut(std::string) = 0;
+		virtual void outPut(std::string str) = 0;
 
-		virtual std::string inPut() = 0;
+		virtual void inPut(std::string& str) = 0;
 	};
 }
 

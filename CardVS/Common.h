@@ -6,6 +6,11 @@
 #include <fstream>
 #include <vector>
 
+using OutFunc = void(*)(std::string);
+
+using InputFunc = void(*)(std::string&);
+
+
 using PlayerType = std::pair<
 	std::pair<uint64_t, std::string>,
 	long long>;

@@ -37,6 +37,9 @@
     <Filter Include="源文件\SystemPlatform">
       <UniqueIdentifier>{8c152a30-72c3-40cc-889a-5698f1d0623b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\SystemPlatform\Platform">
+      <UniqueIdentifier>{e1f3ddd2-a512-4784-b92e-f1b64592bd71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,7 +54,7 @@
     <ClCompile Include="FrameWork.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="WindowPlarform.cpp">
+    <ClCompile Include="SELL.cpp">
       <Filter>源文件\SystemPlatform</Filter>
     </ClCompile>
     <ClCompile Include="Out.h">
@@ -66,6 +69,9 @@
     <ClCompile Include="Input.cpp">
       <Filter>源文件\Tools</Filter>
     </ClCompile>
+    <ClCompile Include="QTANDShell.h">
+      <Filter>头文件\SystemPlatform</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -73,12 +79,6 @@
     </ClInclude>
     <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowsPlatform.h">
-      <Filter>头文件\SystemPlatform</Filter>
-    </ClInclude>
-    <ClInclude Include="LinuxPlatform.h">
-      <Filter>头文件\SystemPlatform</Filter>
     </ClInclude>
     <ClInclude Include="Core.h">
       <Filter>头文件</Filter>
@@ -92,12 +92,6 @@
     <ClInclude Include="FrameWork.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="PlatformCommon.h">
-      <Filter>头文件\SystemPlatform</Filter>
-    </ClInclude>
-    <ClInclude Include="Platform.h">
-      <Filter>头文件\SystemPlatform</Filter>
-    </ClInclude>
     <ClInclude Include="ToolsCommon.h">
       <Filter>头文件\tools</Filter>
     </ClInclude>
@@ -106,6 +100,24 @@
     </ClInclude>
     <ClInclude Include="Input.h">
       <Filter>头文件\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>头文件\SystemPlatform\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformCommon.h">
+      <Filter>头文件\SystemPlatform\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="LinuxPlatform.h">
+      <Filter>头文件\SystemPlatform\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsPlatform.h">
+      <Filter>头文件\SystemPlatform\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="SHELL.h">
+      <Filter>头文件\SystemPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="QT.h">
+      <Filter>头文件\SystemPlatform</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
