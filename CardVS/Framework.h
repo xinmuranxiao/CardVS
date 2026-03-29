@@ -12,7 +12,9 @@ namespace framework {
 }
 
 namespace work {
-	int Player_Judge(tools::Out& R_Out);
+	int Player_Judge(tools::Out& R_Out,
+		tools::Input& R_Input,
+		tools::File& log);
 }
 
 #endif //FRAMEWORK_H

@@ -1,19 +1,24 @@
 #include "player.h"
 
 namespace player{
-	void Player::load(tools::Out& R_Out) {//读取用户
+	void Player::load(tools::Out& R_Out,
+		tools::Input& R_Input,
+		tools::File& log) {//读取用户
 	re:		tools::File file;//使用file工具类
 		R_Out.out(std::string("请输入文件路径"));
 		R_Out.out(std::string("默认exe同路径"));
 		R_Out.out(std::string("若使用自定义路径请输入y(不区分大小写)"));
 		R_Out.out(std::string("不使用按任意字符"));
-		if (judge_yn()) { 
+		if (judge_yn(R_Out,R_Input,log)) { 
 			std::string address_;
-			std::cin >> address_;
+			R_Input.input(address_);
+			log.log(std::string("change address:")+address_);
 			file.change(address_);
 		}
+		log.log(std::string("loading Player"));
 		player = file.load_player();//调用读取
 		if (player.first.first == -1) {
+			log.log(std::string("open file error"));
 			R_Out.out(std::string
 			("未初始化，请初始化或者文件打开失败"));
 			R_Out.out(std::string("1.重试"));
@@ -27,9 +32,11 @@ namespace player{
 				player = file.init_player();
 		}
 	} 
-	bool Player::judge_yn() {
-		char YON;
-		std::cin >> YON;
-		return YON - 'y' == 0 || YON - 'Y' == 0;
+	bool Player::judge_yn(tools::Out& R_Out,
+		tools::Input& R_Input,
+		tools::File& log) {
+		std::string YON;
+		R_Input.input(YON);
+		return YON[0] - 'y' == 0 || YON[0] - 'Y' == 0;
 	}
 }

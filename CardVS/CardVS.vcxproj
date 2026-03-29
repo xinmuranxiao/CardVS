@@ -135,6 +135,7 @@
     <ClCompile Include="QTANDShell.h" />
     <ClCompile Include="ToolsCommon.cpp" />
     <ClCompile Include="SELL.cpp" />
+    <ClCompile Include="WindowsPlatformcpp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />

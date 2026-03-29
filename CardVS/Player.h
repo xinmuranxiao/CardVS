@@ -8,11 +8,15 @@
 namespace player {
 	class Player {
 	public:
-		void load(tools::Out& R_Out);
+		void load(tools::Out& R_Out,
+			tools::Input& R_Input,
+			tools::File& log);
 
 		//void init();
 
-		bool judge_yn();
+		bool judge_yn(tools::Out& R_Out,
+			tools::Input& R_Input,
+			tools::File& log);
 
 	protected:
 		PlayerType player;

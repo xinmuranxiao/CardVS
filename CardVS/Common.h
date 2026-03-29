@@ -6,10 +6,11 @@
 #include <fstream>
 #include <vector>
 
+#include <time.h>
+
 using OutFunc = void(*)(std::string);
-
 using InputFunc = void(*)(std::string&);
-
+using TimeFunc = void(*)(std::string&);
 
 using PlayerType = std::pair<
 	std::pair<uint64_t, std::string>,

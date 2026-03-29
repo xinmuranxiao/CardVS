@@ -15,6 +15,8 @@ namespace tools {
 		PlayerType init_player()override;
 
 		PlayerType load_player()override;
+		
+		void log(const std::string& str)override;
 
 	private:
 		std::string address;//ÎÄ¼şµØÖ·

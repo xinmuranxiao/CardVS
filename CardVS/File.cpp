@@ -17,14 +17,24 @@ namespace tools {
 	}
 
 	PlayerType File::init_player() {//初始化
-		PlayerType newPlayer = { {0,std::string("name")},0 };
+		PlayerType newPlayer = { {0,std::string("name")},0 };//初始化
 		outPut(std::string("请输入用户名称"));
-		std::cin >> newPlayer.first.first;
+		std::cin >> newPlayer.first.first;//输入名称
 		outPut(std::string());
-		return newPlayer;
+		return newPlayer;//返回生成的用户
 	}
 
 	void File::change(const std::string address_) {
 		address = address_;
+	}
+
+	void File::log(const std::string& str) {
+		
+		//输出
+		std::ofstream log("log.txt", std::ios::app);
+		if (!log.is_open()) {
+			std::cout << ss.str() << "no log.txt" << std::endl;
+		}
+		log << ss.str() << " " << str << std::endl;
 	}
 }

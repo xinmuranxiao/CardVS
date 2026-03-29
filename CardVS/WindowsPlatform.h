@@ -6,6 +6,7 @@
 namespace platform {
 	class WinPF:public Platform {
 	public:
+		
 	};
 }
 

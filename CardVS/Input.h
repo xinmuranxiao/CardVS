@@ -9,6 +9,8 @@ namespace tools{
 		PlayerType init_player();
 
 		PlayerType load_player();
+
+		void log(const std::string& str)override;
 	};
 }
 
