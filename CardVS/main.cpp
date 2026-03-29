@@ -19,7 +19,7 @@ int main() {
 
 	if (judge == 1) Player.load(R_Out, R_Input,log);
 
-	//else if (judge == 2)Player.init();
+	else if (judge == 2)Player.init(R_Out, R_Input, log);
 
 	log.log(std::string("stoped"));
 

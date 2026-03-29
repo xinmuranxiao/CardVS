@@ -6,8 +6,6 @@
 namespace tools {
 	class Storage {
 	public:
-		virtual PlayerType init_player() = 0;//≥ı ºªØ
-
 		virtual PlayerType load_player() = 0;//∂¡»°
 
 		virtual void log(const std::string& str) = 0;

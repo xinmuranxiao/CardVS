@@ -12,8 +12,6 @@ namespace tools {
 
 		void change(const std::string address_);//改变address变量
 
-		PlayerType init_player()override;
-
 		PlayerType load_player()override;
 		
 		void log(const std::string& str)override;

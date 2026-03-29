@@ -29,9 +29,19 @@ namespace player{
 			std::cin >> judge;
 			if (judge == 1)goto re;
 			else if (judge == 2)
-				player = file.init_player();
+				init(R_Out, R_Input, log);
 		}
-	} 
+	}
+
+	void Player::init(tools::Out& R_Out,
+		tools::Input& R_Input,
+		tools::File& log) {//初始化
+			R_Out.out(std::string("请输入用户名称"));
+			R_Input.input(player.first.second);//输入名称
+			log.log(std::string("set newPlayer"));
+		}
+
+	//判断yes或者no
 	bool Player::judge_yn(tools::Out& R_Out,
 		tools::Input& R_Input,
 		tools::File& log) {

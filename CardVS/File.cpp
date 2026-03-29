@@ -16,14 +16,6 @@ namespace tools {
 		return player;//返回用户
 	}
 
-	PlayerType File::init_player() {//初始化
-		PlayerType newPlayer = { {0,std::string("name")},0 };//初始化
-		outPut(std::string("请输入用户名称"));
-		std::cin >> newPlayer.first.first;//输入名称
-		outPut(std::string());
-		return newPlayer;//返回生成的用户
-	}
-
 	void File::change(const std::string address_) {
 		address = address_;
 	}
