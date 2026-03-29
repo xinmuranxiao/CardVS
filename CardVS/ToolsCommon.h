@@ -19,10 +19,6 @@ namespace tools {
 		void setInPut(InputFunc func);
 
 		void input(std::string& str);
-
-		void setGetTime(TimeFunc func);
-
-		void getTime(std::string& str);
 	protected:
 		OutFunc outPut = nullptr;
 		InputFunc inPut = nullptr;

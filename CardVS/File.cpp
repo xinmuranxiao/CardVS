@@ -29,12 +29,12 @@ namespace tools {
 	}
 
 	void File::log(const std::string& str) {
-		
+		std::ofstream log("log.txt",std::ios::app);
+
+		//获取unix时间
+		std::time_t now = std::time(nullptr);//后续可能会使用20xx_xx_xx
+
 		//输出
-		std::ofstream log("log.txt", std::ios::app);
-		if (!log.is_open()) {
-			std::cout << ss.str() << "no log.txt" << std::endl;
-		}
-		log << ss.str() << " " << str << std::endl;
+		log << now << " " << str << std::endl;
 	}
 }

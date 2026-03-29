@@ -10,7 +10,6 @@ int main() {
 
 	R_Out.setOutPut(framework::outPut_PlatForm);//°ó¶¨Out
 	R_Input.setInPut(framework::inPut_PlatForm);//°ó¶¨input
-	log.setGetTime(framework::log_PlatForm);
 
 	log.log(std::string("start"));
 
