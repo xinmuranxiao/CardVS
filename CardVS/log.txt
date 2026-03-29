@@ -1,7 +1,10 @@
-1774780103 start
-1774780112 set newPlayer
-1774780112 stoped
-1774780258 start
-1774780267 set newPlayer
-1774780269 saving now palyer
-1774780271 stoped
+1774787230 start
+1774787236 set newPlayer
+1774787238 saving now palyer
+1774787240 stoped
+1774787375 start
+1774787380 loading Player
+1774787386 loading Player
+1774787389 set newPlayer
+1774787390 saving now palyer
+1774787392 stoped

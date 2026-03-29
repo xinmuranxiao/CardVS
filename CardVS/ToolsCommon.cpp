@@ -5,7 +5,7 @@ namespace tools {
 		outPut = func;
 	}
 
-	void Storage::out(std::string str) {
+	void Storage::out(const std::string& str) {
 		if (outPut != nullptr)
 		{
 			outPut(str);
@@ -20,6 +20,17 @@ namespace tools {
 		if (inPut != nullptr)
 		{
 			inPut(str);
+		}
+	}
+
+	void Storage::setSys(SysFunc func) {
+		Sys = func;
+	}
+
+	void Storage::System(const std::string& str) {
+		if (Sys != nullptr)
+		{
+			Sys(str);
 		}
 	}
 }

@@ -6,7 +6,7 @@
 namespace platform {
 	class Shell :public WinPF {
 	public:
-		void outPut(std::string) override;
+		void outPut(const std::string& str) override;
 
 		void inPut(std::string& str) override;
 	};

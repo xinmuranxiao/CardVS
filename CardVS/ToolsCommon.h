@@ -17,15 +17,22 @@ namespace tools {
 		void setOutPut(OutFunc func);
 
 		//输出函数
-		void out(std::string str);
+		void out(const std::string& str);
 
 		//设置输入函数
 		void setInPut(InputFunc func);
 
 		//输入函数
 		void input(std::string& str);
+
+		//设置刷新函数
+		void setSys(SysFunc func);
+
+		//刷新函数
+		void System(const std::string& str);
 	protected:
 		OutFunc outPut = nullptr;
+		SysFunc Sys = nullptr;
 		InputFunc inPut = nullptr;
 		TimeFunc time = nullptr;
 	};

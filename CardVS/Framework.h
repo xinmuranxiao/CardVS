@@ -7,8 +7,9 @@
 namespace framework {
 	extern platform::Platform* R_Platform;
 
-	void outPut_PlatForm(std::string msg);
+	void outPut_PlatForm(const std::string& msg);
 	void inPut_PlatForm(std::string& msg);
+	void Sys_Platform(const std::string& msg);
 }
 
 namespace work {

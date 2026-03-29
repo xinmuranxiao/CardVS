@@ -10,12 +10,15 @@ int main() {
 
 	R_Out.setOutPut(framework::outPut_PlatForm);//绑定Out
 	R_Input.setInPut(framework::inPut_PlatForm);//绑定input
+	R_Out.setSys(framework::Sys_Platform);
 
 	log.log(std::string("start"));
 
  	player::Player Player;//创建用户
 
 	while (1) {
+		R_Out.System(std::string("cls"));
+
 		int judge = work::Player_Judge(R_Out, R_Input, log);
 
 		if (judge == 0)break;
@@ -26,7 +29,10 @@ int main() {
 
 		else if (judge == 3)Player.save(R_Out, log);
 
-		else R_Out.out(std::string("error"));
+		else { 
+			R_Out.out(std::string("error\n请重试")); 
+			log.log(std::string("on error input"));
+		}
 	}
 
 	log.log(std::string("stoped"));

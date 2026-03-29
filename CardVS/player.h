@@ -12,14 +12,18 @@ namespace player {
 			tools::Input& R_Input,
 			tools::File& log);
 
-		//void init();
+		void init(tools::Out& R_Out,
+			tools::Input& R_Input,
+			tools::File& log);
+
+		void save(tools::Out& R_Out,
+			tools::File& log);
 
 		bool judge_yn(tools::Out& R_Out,
 			tools::Input& R_Input,
 			tools::File& log);
-
 	protected:
-		PlayerType player;
+		PlayerType player = { {0,"name"},0 };
 	};
 }
 

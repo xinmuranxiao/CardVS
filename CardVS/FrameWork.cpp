@@ -3,7 +3,7 @@
 namespace framework {
 	platform::Platform* R_Platform = nullptr;
 
-	void outPut_PlatForm(std::string msg) {
+	void outPut_PlatForm(const std::string& msg) {
 		if (R_Platform != nullptr) R_Platform->outPut(msg);
 	}
 
@@ -11,6 +11,9 @@ namespace framework {
 		if (R_Platform != nullptr) R_Platform->inPut(msg);
 	}
 
+	void Sys_Platform(const std::string& msg) {
+		if (R_Platform != nullptr) R_Platform->Sys(msg);
+	}
 }
 
 
