@@ -1,0 +1,7 @@
+1774780103 start
+1774780112 set newPlayer
+1774780112 stoped
+1774780258 start
+1774780267 set newPlayer
+1774780269 saving now palyer
+1774780271 stoped

@@ -36,10 +36,17 @@ namespace player{
 	void Player::init(tools::Out& R_Out,
 		tools::Input& R_Input,
 		tools::File& log) {//初始化
-			R_Out.out(std::string("请输入用户名称"));
-			R_Input.input(player.first.second);//输入名称
-			log.log(std::string("set newPlayer"));
-		}
+		R_Out.out(std::string("请输入用户名称"));
+		R_Input.input(player.first.second);//输入名称
+		log.log(std::string("set newPlayer"));
+	}
+
+	void Player::save(tools::Out& R_Out,
+		tools::File& log) {
+		tools::File file;
+		log.log(std::string("saving now palyer"));
+		file.save_Player(player);
+	}
 
 	//判断yes或者no
 	bool Player::judge_yn(tools::Out& R_Out,

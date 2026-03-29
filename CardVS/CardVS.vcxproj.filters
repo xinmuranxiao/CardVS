@@ -54,7 +54,7 @@
     <ClCompile Include="FrameWork.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="SELL.cpp">
+    <ClCompile Include="SHELL.cpp">
       <Filter>源文件\SystemPlatform</Filter>
     </ClCompile>
     <ClCompile Include="Out.h">

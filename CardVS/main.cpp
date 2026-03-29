@@ -15,11 +15,19 @@ int main() {
 
  	player::Player Player;//创建用户
 
-	int judge = work::Player_Judge(R_Out,R_Input,log);
+	while (1) {
+		int judge = work::Player_Judge(R_Out, R_Input, log);
 
-	if (judge == 1) Player.load(R_Out, R_Input,log);
+		if (judge == 0)break;
 
-	else if (judge == 2)Player.init(R_Out, R_Input, log);
+		else if (judge == 1) Player.load(R_Out, R_Input, log);
+
+		else if (judge == 2)Player.init(R_Out, R_Input, log);
+
+		else if (judge == 3)Player.save(R_Out, log);
+
+		else R_Out.out(std::string("error"));
+	}
 
 	log.log(std::string("stoped"));
 

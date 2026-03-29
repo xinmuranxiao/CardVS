@@ -12,9 +12,11 @@ namespace tools {
 
 		void change(const std::string address_);//改变address变量
 
-		PlayerType load_player()override;
+		PlayerType load_player()override;//读取用户信息
 		
-		void log(const std::string& str)override;
+		void save_Player(const PlayerType& player)override;
+
+		void log(const std::string& str)override;//日志输出
 
 	private:
 		std::string address;//文件地址

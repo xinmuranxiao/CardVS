@@ -6,6 +6,8 @@
 namespace tools{
 	class Input :public Storage {
 	public:
+		void save_Player(const PlayerType& player);
+
 		PlayerType load_player();
 
 		void log(const std::string& str)override;

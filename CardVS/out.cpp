@@ -8,4 +8,8 @@ namespace tools {
 	void Out::log(const std::string& str) {
 		return;
 	}
+
+	void Out::save_Player(const PlayerType& player) {
+		return;
+	}
 }

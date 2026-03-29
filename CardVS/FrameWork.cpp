@@ -20,8 +20,10 @@ namespace work {
 		tools::File& log) {
 
 		R_Out.out(std::string("请输入"));
+		R_Out.out(std::string("0.退出"));
 		R_Out.out(std::string("1.读取"));
 		R_Out.out(std::string("2.创建"));
+		R_Out.out(std::string("3.保存"));
 		R_Out.out(std::string("请输入对应编号"));
 
 		std::string judge;
