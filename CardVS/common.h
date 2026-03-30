@@ -8,9 +8,10 @@
 
 #include <time.h>
 
-using OutFunc = void(*)(std::string);
+using OutFunc = void(*)(const std::string&);
 using InputFunc = void(*)(std::string&);
 using TimeFunc = void(*)(std::string&);
+using SysFunc = void(*)(const std::string&);
 
 using PlayerType = std::pair<
 	std::pair<uint64_t, std::string>,
